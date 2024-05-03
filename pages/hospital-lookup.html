@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css"
+        type="text/css">
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+</head>
+
+<body>
+    <div class="center">
+        <h1>Hospital Lookup Tool</h1>
+        <p>
+            This mapless geospatial processing tool uses Mapbox GL JS and Turf.js to take a
+            user-inputted address and return the nearest hospital and its distance from the search point.</p> 
+            <p>Data is
+            sourced from <a href="https://www.usgs.gov/us-board-on-geographic-names/domestic-names?p=gnispq%3A8%3A0"
+                 class="link" target="_blank"
+                rel="noopener noreferrer">USGS</a>.<br><br>
+            Give it a try below by searching a U.S. address.
+        </p>
+
+        <div id="geocoder"></div>
+        <p id="result"></p>
+    </div>
+</body>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js">
+</script>
+<script src="https://d3js.org/d3-fetch.v1.min.js"></script>
+<script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+<script src="../assets/scripts/hospital-lookup.js"></script>
+
+</html>

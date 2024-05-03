@@ -1,0 +1,169 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    line-height: 1.3;
+    font-size: 21px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #ddd;
+        background-color: #111;
+    }
+
+    .link {
+        color: #207fe5
+    }
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.em {
+    white-space: nowrap;
+    font-weight: 750;
+    font-size: 4.5rem;
+
+}
+
+header {
+    width: 100vw;
+}
+
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    margin-left: 1rem;
+
+}
+
+h2 {
+    padding-top: 20px
+}
+
+h1 {
+    font-size: 3.8rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.top-right {
+    padding: 3px;
+}
+
+nav {
+    margin-left: 10px;
+    line-height: 1.4;
+}
+
+.friends {
+    line-height: 1.4;
+    font-size: 26px;
+}
+
+
+.work {
+    line-height: 1.4;
+    font-size: 24px;
+}
+
+li {
+    list-style-type: square
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px green solid;
+    max-width: 400px;
+    gap: 10px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.item-img {
+    border: red 1px solid;
+    width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position:bottom right;
+}
+
+
+.grid-gal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.grid-item {
+    height: 340px;
+    flex-grow: 1;
+    row-gap: 20px;
+    position: relative;
+    max-width: 100%;
+}
+
+.grid-img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    filter: sepia(95%) saturate(2);
+}
+
+.grid-li:last-child {
+    flex-grow: 10;
+}
+
+.grid-text {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   text-align: right;
+   line-height: .4;
+   white-space: wrap;
+   
+}
+
+.grid-img:hover {
+    filter: none;
+    transition: .3ms;
+}
+
+.highlight {
+    padding: 3px;
+    white-space: wrap;
+}
+
+.highlight {
+
+    background-color: #111;
+
+}
+
+.iframe-container {
+    max-width: 600px;
+    margin-top: 15px;
+}
+
+#result {
+    color: white;
+}

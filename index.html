@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courtney Cox: Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
 <body>
-    <div class="center">
-        <header id="top">
+
+    <header id="top">
+        <div class="center">
             <h1><small class="top-right">Hi, I'm</small> <br><span class="em bottom-right">Court</em>.</h1>
             <p class="friends"><strong>My full name is Courtney Cox.</strong><br>I'm not the actress from Friends.</p>
             <p><span class='work'><strong>I'm currently looking for work.</strong><br>
@@ -18,7 +20,8 @@
             </p>
             <p class="work"><strong>This page follows the principles of Brutalist web design.</strong><br>Learn what
                 that means <a href='https://brutalist-web.design/' class='link' target='_blank'>here</a> and <a
-                   class='link' href='https://99designs.com/blog/design-history-movements/brutalism/' target='_blank'>here</a>.</p>
+                    class='link' href='https://99designs.com/blog/design-history-movements/brutalism/'
+                    target='_blank'>here</a>.</p>
             <hr>
             <h2>Contents</h2>
             <nav>
@@ -32,13 +35,15 @@
                     <a class='link' href="#portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a class='link' href="#philosophy">My Approach to Data Design</a>
+                    <a class='link' href="#philosophy">My Data Design Philosophy</a>
                 </li>
             </nav>
             <hr>
-        </header>
-        <main>
-            <section>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="center">
                 <div id="about-me">
                     <h2>About Me</h2>
                     <ul>
@@ -47,20 +52,24 @@
                             </p>
                         </li>
                         <li>
-                            <p>I'm a 2023-24 <a class='link' href='https://www.nytimes.com/by/courtney-cox' target='_blank'>New York
-                                    Times</a> fellow in the <a class='link' href='https://www.nytimes.com/section/upshot'
-                                    target='_blank'>Upshot</a> section.</p>
+                            <p>I'm a 2023-24 <a class='link' href='https://www.nytimes.com/by/courtney-cox'
+                                    target='_blank'>New York
+                                    Times</a> fellow in the <a class='link'
+                                    href='https://www.nytimes.com/section/upshot' target='_blank'>Upshot</a> section.
+                            </p>
                         </li>
                         <li>
                             <p>I have a master's degree in Digital Mapping and a bachelor's degree in Creative Writing.
                             </p>
                         </li>
                         <li>
-                            <p>I do research and fact checking for <a class='link' href="https://www.nytimes.com/spotlight/flashback"
-                                    target="_blank">Flashback</a>, a New York Times weekly history game.</p>
+                            <p>I do research and fact checking for <a class='link'
+                                    href="https://www.nytimes.com/spotlight/flashback" target="_blank">Flashback</a>, a
+                                New York Times weekly history game.</p>
                         </li>
                         <li>
-                            <p>I used to work for a disability research and advocacy institute, specializing in accessible written and visual communications.</p>
+                            <p>I used to work for the UK Human Development Institute, a disability research and advocacy
+                                organization, specializing in accessible written and visual communications.</p>
                         </li>
                         <li>
                             <p>In 2022, I was a McClatchy data fellow. I created data visualizations for various
@@ -72,12 +81,14 @@
                     </ul>
                 </div>
                 <a class='link' href="#top">Back to top</a>
-            </section>
-            <hr>
-            <section>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div class="center">
                 <h2 id="courses-skills">Coursework and Technical Skills</h2>
                 <h3>Relevant Coursework & Certificates</h3>
-                <ul> 
+                <ul>
                     <li>Collaborative Geovisualization</li>
                     <li>Creative Non-Fiction</li>
                     <li>Design for Interactive Web Mapping</li>
@@ -90,7 +101,7 @@
                     <li>Spatial Data Analysis and Visualization</li>
                     <li>Writing for Media</li>
 
-    
+
                 </ul>
 
                 <h3>Technical Skills</h3>
@@ -122,16 +133,80 @@
 
                 </ul>
                 <a class='link' href="#top">Back to top</a>
-            </section>
-            <hr>
-            <section>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div class="center">
                 <h2 id="portfolio">Portfolio</h2>
-                <p>I'm in the process of updating my portfolio. It will eventually live here.</p>
-                    <p>Check it out in its current version <a href='https://mapcourt.blot.im/tagged/portfolio' class='link' target='_blank'>here</a>.</p>
+                <p>Some text!</p>
+
+                <div class="grid-gal">
+
+                    <div class="grid-item">
+                        <a href="pages/hospital-lookup.html">
+                            <img alt="" class="grid-img"
+                                style="object-position: top right" src="./assets/yellow.jpg" />
+                        </a>
+                        <div class="grid-text">
+                            <em><span class="highlight">Fall 2022</em></span>
+                            <h3><span class="highlight">Hospital Lookup Tool</span></h3>
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <a href="pages/miami-heat-map.html">
+                            <img alt="a pixelated heat map, zoomed in so land shape is unidentifiable" class="grid-img"
+                                style="object-position: top right" src="./assets/miamihottest.png" />
+                        </a>
+                        <div class="grid-text">
+                            <em><span class="highlight">Summer 2022</em></span>
+                            <h3><span class="highlight">Land Temperature in Miami</span></h3>
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <a href="https://coxco96.github.io/kentucky-sackler-story/" target="_blank">
+                            <img alt='hundreds of variously sized red circles form the shape of Kentucky'
+                                class="grid-img" style="object-position: bottom left" src="./assets/sackler.png" />
+                        </a>
+                        <div class="grid-text">
+                            <em><span class="highlight">Winter 2021</em></span>
+                            <h3><span class="highlight">Sackler Map</span></h3>
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <img class="grid-img" src="./assets/yellow.jpg" />
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-img" src="./assets/yellow.jpg" />
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-img" src="./assets/yellow.jpg" />
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-img" src="./assets/yellow.jpg" />
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-img" src="./assets/yellow.jpg" />
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-img" src="./assets/yellow.jpg" />
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-img" src="./assets/yellow.jpg" />
+                    </div>
+
+                </div>
+
+                
                 <a class='link' href="#top">Back to top</a>
-            </section>
-            <hr>
-            <section>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div class="center">
                 <div id="philosophy">
                     <h2>My Data Design Philosophy</h2>
                     <p>The following statements represent the principles that guide my work. <br>Because I am (and will
@@ -163,7 +238,8 @@
                                 whole
                                 truth. A mapmaker should choose <a class='link'
                                     href='https://open.lib.umn.edu/mapping/chapter/7-lying-with-maps/'
-                                    target='_blank'>which lie(s) to tell</a> with careful consideration.)</p>
+                                    target='_blank'>which
+                                    lie(s) to tell</a> with careful consideration.)</p>
                         </li>
                         <li>
                             <p>
@@ -217,7 +293,7 @@
                                 the topic. Anticipate their misconceptions, edit the design to address them and
                                 repeat.</p>
                         </li>
-                   
+
                         <li>
                             <p>Clarity and accessibility win out over aesthetics.</p>
                         </li>
@@ -229,93 +305,14 @@
                         </li>
                     </ul>
                     <a class='link' href="#top">Back to top</a>
-            </section>
-        </main>
+                </div>
+            </div>
+        </section>
 
-
-
-
-
+    </main>
 
 
 </body>
 
-<style>
-    body {
-        font-family: Helvetica, sans-serif;
-        margin: 0;
-        line-height: 1.3;
-        font-size: 21px;
-        margin-left: 1rem;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        body {
-            color: #ddd;
-            background-color: #111;
-        }
-
-        .link {
-            color: #207fe5
-        }
-    }
-
-    section {
-        margin-bottom: 3rem;
-    }
-
-    .em {
-        white-space: nowrap;
-        font-weight: 750;
-        font-size: 4.5rem;
-
-    }
-
-    .center {
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1rem;
-
-    }
-
-    h2 {
-        padding-top: 20px
-    }
-
-    h1 {
-        font-size: 3.8rem;
-        line-height: 1;
-        font-weight: 600;
-        margin-bottom: .5rem;
-    }
-
-    .top-right {
-        padding: 3px;
-    }
-
-    nav {
-        margin-left: 10px;
-        line-height: 1.4;
-    }
-
-    .friends {
-        line-height: 1.4;
-        font-size: 26px;
-    }
-
-
-    .work {
-        line-height: 1.4;
-        font-size: 24px;
-    }
-
-    li {
-        list-style-type: square
-    }
-</style>
 
 </html>
