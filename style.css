@@ -174,3 +174,49 @@ li {
 #result {
     color: white;
 }
+
+/* new grid starts here */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: 100% 100% 100% 100% 100%;
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-content: space-between;
+
+}
+
+.subgrid {
+    row-gap: 5px;
+    display: grid;
+}
+
+.portfolio-title, .portfolio-date {
+    margin: 1px auto;
+}
+
+.portfolio-item {
+    border: 1px gray solid;
+}
+
+.two-rows {
+    grid-row: span 2;
+}
+
+.two-cols {
+    grid-column: span 2;
+}
+
+.four-rows {
+    grid-row: span 4;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 0;
+}
