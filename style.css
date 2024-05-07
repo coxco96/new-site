@@ -41,6 +41,7 @@ header {
     margin-right: auto;
     padding: 1rem;
     margin-left: 1rem;
+    max-width: 100%;
 
 }
 
@@ -166,10 +167,7 @@ li {
 
 }
 
-.iframe-container {
-    max-width: 600px;
-    margin-top: 15px;
-}
+
 
 #result {
     color: white;
@@ -179,13 +177,33 @@ li {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
     grid-template-rows: 100% 100% 100% 100% 100%;
     column-gap: 5px;
     row-gap: 5px;
+    max-width: 100%;
     justify-content: space-between;
 
 }
+.pf-text {
+    line-height: 1.2;
+}
+
+.appeared, .date {
+    font-family: "DM Serif Text", serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 18px;
+
+}
+
+.pf-title {
+    font-family: "DM Serif Text", serif;
+    font-size: 22px;
+    margin: 0;
+}
+
+
 
 .subgrid {
     row-gap: 5px;
@@ -204,8 +222,12 @@ li {
     grid-row: span 2;
 }
 
-.two-cols {
-    grid-column: span 2;
+
+@media (min-width: 500px) {
+    .portfolio-item, .subgrid {
+        grid-column: span 2;
+    }
+
 }
 
 .four-rows {
