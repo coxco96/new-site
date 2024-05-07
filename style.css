@@ -80,98 +80,9 @@ li {
     list-style-type: square
 }
 
-.gallery {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content:space-between;
-}
-
-.gallery-item {
-    display: flex;
-    flex-direction: column;
-    border: 1px green solid;
-    max-width: 400px;
-    gap: 10px;
-    margin: 0;
-    flex-grow: 1;
-
-}
-
-.item-img {
-    border: red 1px solid;
-    width: 100%;
-    max-width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    object-position:bottom right;
-}
-
-
-.grid-gal {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-right: 1rem;
-}
-
-.grid-item {
-    height: auto;
-    flex-grow: 1;
-    row-gap: 20px;
-    position: relative;
-    width: 350px;
-    max-width: 100%;
-    border: pink 1px solid;
-}
-
-.grid-img {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-    filter: grayscale(10%);
-    opacity: .9;
-}
-
-.grid-li:last-child {
-    flex-grow: 10;
-}
-
-.grid-text {
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   text-align: right;
-   line-height: 1.2;
-   white-space: wrap;
-   margin-right: 1px;
-   
-}
-
-.grid-img:hover {
-    filter: none;
-    transition: .3ms;
-    opacity: 1;
-}
-
-.highlight {
-    padding: 1px;
-    white-space: wrap;
-}
-
-.highlight {
-
-    background-color: #111;
-
-}
 
 
 
-#result {
-    color: white;
-}
 
 /* new grid starts here */
 
@@ -182,28 +93,9 @@ li {
     column-gap: 5px;
     row-gap: 5px;
     max-width: 100%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
 }
-.pf-text {
-    line-height: 1.2;
-}
-
-.appeared, .date {
-    font-family: "DM Serif Text", serif;
-    font-weight: 550;
-    font-style: normal;
-    font-size: 18px;
-
-}
-
-.pf-title {
-    font-family: "DM Serif Text", serif;
-    font-size: 22px;
-    margin: 0;
-}
-
-
 
 .subgrid {
     row-gap: 5px;
@@ -216,10 +108,7 @@ li {
 
 .portfolio-item {
     border: 1px gray solid;
-}
-
-.two-rows {
-    grid-row: span 2;
+    max-height: 100%;
 }
 
 
@@ -228,10 +117,6 @@ li {
         grid-column: span 2;
     }
 
-}
-
-.four-rows {
-    grid-row: span 4;
 }
 
 figure img {
