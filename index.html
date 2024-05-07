@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +10,15 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="motion.css" />
 </head>
+
+<script>
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const details = document.querySelector(".object-and-details > details");
+
+    if (mediaQuery.matches) {
+        details.removeAttribute("open");
+    }
+</script>
 
 <body>
 
@@ -599,13 +607,5 @@
 
 
 </body>
-<script>
-    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const details = document.querySelector(".object-and-details > details");
-
-    if (mediaQuery.matches) {
-        details.removeAttribute("open");
-    }
-</script>
 
 </html>
